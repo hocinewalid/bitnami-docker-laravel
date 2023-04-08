@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: hocinewalidbitnamidockerlaravel 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hocinewalidbitnamidockerlaravel
+  template:
+    metadata:
+      labels:
+        app: hocinewalidbitnamidockerlaravel 
+    spec:
+      containers:
+        - name: hocinewalidbitnamidockerlaravel 
+          image: acrkenzo.azurecr.io/hocinewalidbitnamidockerlaravel
+          ports:
+          - containerPort: 3000
